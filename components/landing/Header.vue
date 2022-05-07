@@ -1,51 +1,120 @@
 <template>
-  <section class="bg-white">
-    <header>
-      <div class="flex flex-col flex-wrap items-center px-8 py-6 mx-auto max-w-7xl md:flex-row">
-        <a href="#_"
-           class="flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-auto title-font lg:items-center lg:justify-center md:mb-0">
-            <span class="text-xl font-black leading-none text-gray-900 select-none logo">tails<span
-                class="text-indigo-500">.</span></span>
-        </a>
-        <nav class="flex flex-wrap items-center justify-center text-base font-bold tracking-tight md:ml-auto">
-          <a href="#_" class="mr-5 hover:text-gray-900">Home</a>
-          <a href="#_" class="mr-5 hover:text-gray-900">Features</a>
-          <a href="#_" class="mr-5 hover:text-gray-900">Pricing</a>
-          <a href="#_" class="mr-5 hover:text-gray-900">Blog</a>
-        </nav>
-        <button class="inline-flex items-center px-3 py-2 mt-4 text-sm font-bold text-gray-700 bg-gray-200 border-0 rounded focus:outline-none hover:bg-gray-300 md:mt-0">
-          Try For Free
-          <svg fill="none"
-               stroke="currentColor"
-               stroke-linecap="round"
-               stroke-linejoin="round"
-               stroke-width="2"
-               class="w-4 h-4 ml-1"
-               viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
+  <section class="w-full px-6 antialiased bg-white">
+    <div class="mx-auto max-w-7xl">
+
+      <nav class="relative z-50 h-24 select-none">
+        <div class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2">
+          <div class="flex items-center justify-start w-1/4 h-full pr-4">
+            <a href="#_" class="inline-block py-4 md:py-0">
+              <span class="p-1 text-xl font-black leading-none text-gray-900"><span>tails</span><span
+                  class="text-blue-600">.</span></span>
+            </a>
+          </div>
+          <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex"
+               :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+            <div class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+              <a href="#_"
+                 class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">tails<span
+                  class="text-blue-600">.</span></a>
+              <div class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+                <a href="/"
+                   class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-blue-600 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
+                <a href="#features"
+                   class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-blue-600 lg:mx-3 md:text-center">Features</a>
+                <a href="#integrations"
+                   class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-blue-600 lg:mx-3 md:text-center">Integrations</a>
+                <a href="#pricing"
+                   class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-blue-600 lg:mx-3 md:text-center">Pricing</a>
+                <a href="https://docs.useform.io"
+                   target="_blank"
+                   rel="noopener"
+                   class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-blue-600 lg:mx-3 md:text-center">Docs</a>
+              </div>
+              <div class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
+                <a href="https://app.useform.io"
+                   class="w-full px-6 py-2 mr-0 text-gray-700 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto">Login</a>
+              </div>
+            </div>
+          </div>
+          <div @click="showMenu = !showMenu"
+               class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+            <svg class="w-6 h-6 text-gray-700"
+                 v-show="!showMenu"
+                 fill="none"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor"
+                 x-cloak="">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="w-6 h-6 text-gray-700"
+                 v-show="showMenu"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg"
+                 v-cloak="">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Hero Content -->
+      <div class="container max-w-lg px-4 pt-32 mx-auto text-left md:max-w-none md:text-center">
+        <h1 class="text-5xl font-extrabold leading-10 tracking-tight text-left text-gray-900 md:text-center sm:leading-none md:text-6xl lg:text-7xl">
+          <span class="inline md:block">Zero-code backend for</span>
+          <v-typical
+              class="blink mt-2 text-blue-500"
+              :steps="['Contact Forms', 1200, 'Subscribe Forms', 1200, 'Support Forms', 1200]"
+              :loop="Infinity"
+              :wrapper="'span'"
+          ></v-typical>
+        </h1>
+        <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">
+          Simplifying the creation of contact forms, blog pages, application pages and so much more!
+        </div>
+        <div class="flex flex-col items-center mt-12 text-center">
+                <span class="relative inline-flex w-full md:w-auto">
+                    <a href="#_"
+                       class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-blue-600 border border-transparent rounded-full md:w-auto hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
+                        Subscribe Now
+                    </a>
+                    <span class="absolute top-0 right-0 px-2 py-1 -mt-3 -mr-6 text-xs font-medium leading-tight text-white bg-green-500 rounded-full">only $3/mo</span>
+                </span>
+          <a href="#features" class="mt-3 text-sm text-blue-500">Learn More</a>
+        </div>
       </div>
-    </header>
+      <!-- End Main Hero Content -->
 
-    <div class="max-w-3xl mx-8 mt-4 lg:mx-auto md:mt-16">
-      <h1 class="mb-8 text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-        Keep your Team in the Loop.</h1>
-      <h2 class="inline-block px-2 mb-4 text-base font-semibold leading-normal tracking-wide text-gray-800 bg-yellow-200 sm:text-lg">
-        Having trouble managing your team?</h2>
-      <p class="mb-8 text-base font-light leading-relaxed text-gray-700 sm:text-lg">Our service
-        can help you keep your team in the loop on latest news, updates, and so much more. Start
-        getting your team organized today.</p>
-      <a href="#_"
-         class="inline-flex items-center px-4 py-2 mr-1 font-bold text-white bg-indigo-500 rounded hover:bg-indigo-600">Try
-        For Free →</a>
-      <a href="#_"
-         class="inline-flex items-center px-4 py-2 font-bold text-gray-700 lowercase bg-gray-200 rounded hover:bg-gray-300 hover:text-gray-900">Learn
-        more</a>
-    </div>
-
-    <div class="h-48 max-w-4xl mx-8 mt-16 overflow-hidden text-white lowercase bg-transparent border-2 border-b-0 border-gray-200 rounded-b-none lg:mx-auto rounded-xl sm:h-64 md:h-96">
-      <img src="https://cdn.devdojo.com/images/december2020/hero-img.jpeg">
     </div>
   </section>
 </template>
+
+
+<script setup>
+const showMenu = ref(false)
+
+import { VTypical } from 'vue-typical';
+</script>
+
+
+<style>
+.blink::after {
+  color: black;
+  font-weight: 300;
+  content: '|';
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
