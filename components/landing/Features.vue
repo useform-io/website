@@ -6,7 +6,7 @@
         <h5 class="w-full mx-0 mt-0 mb-4 font-sans font-bold text-center text-purple-700 border-0 border-gray-200">
           Features
         </h5>
-        <h2 class="w-full m-0 font-sans text-4xl font-black leading-loose tracking-wide text-center text-gray-700 border-0 border-gray-200 sm:text-5xl">
+        <h2 class="w-full m-0 font-sans text-4xl font-black  tracking-wide text-center text-gray-700 border-0 border-gray-200 sm:text-5xl">
           Amazing Features
         </h2>
         <p class="w-full max-w-xl mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
@@ -36,7 +36,7 @@
               <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
                 Zero-backend</h6>
               <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                No server or backend developer need! Just copy-n-paste form endpoint and go live.
+                No server or backend developer needed, just copy-n-paste form endpoint and go live.
               </p>
             </div>
           </div>
@@ -60,14 +60,13 @@
             </div>
             <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
               <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                Secured</h6>
+                Protected</h6>
               <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
                 Forget about spam with our Spam Filters and Google Recaptcha out of the box.
               </p>
             </div>
           </div>
         </div>
-        <!-- Feature 3 -->
         <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
           <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
             <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -84,14 +83,13 @@
             </div>
             <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
               <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
-                Export</h6>
+                Analyse</h6>
               <p class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
-                Set it, and forget it. Our automated tools will allow you to automate your workflow.
+                Export all your submissions to CSV or Excel formats easily with one button press.
               </p>
             </div>
           </div>
         </div>
-        <!-- Feature 4 -->
         <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
           <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
             <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -118,7 +116,6 @@
             </div>
           </div>
         </div>
-        <!-- Feature 5 -->
         <div class="col-span-3 font-sans text-gray-700 bg-gray-50 rounded-3xl">
           <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
             <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -142,7 +139,6 @@
             </div>
           </div>
         </div>
-        <!-- Feature 6 -->
         <div class="col-span-3 font-sans text-gray-700 border-0 bg-gray-50 rounded-3xl">
           <div class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
             <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full">
@@ -176,7 +172,7 @@
       </div>
     </div>
 
-    <!-- Blob Top Left -->
+
     <div class="absolute top-0 left-0 -ml-56 opacity-25 w-96 h-96">
       <svg class="text-pink-500 opacity-50 fill-current w-88 h-88"
            viewBox="0 0 200 200"
@@ -185,7 +181,6 @@
               transform="translate(100 100)"></path>
       </svg>
     </div>
-    <!-- Blob Top Right -->
     <div class="absolute top-0 right-0 -mb-56 opacity-25 w-96 h-96 -mr-72">
       <svg class="w-full h-full text-yellow-500 opacity-50 fill-current"
            viewBox="0 0 200 200"

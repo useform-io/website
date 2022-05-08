@@ -32,7 +32,7 @@
         <landing-pricing-features></landing-pricing-features>
 
         <a href="#_"
-           class="py-3.5 text-sm font-medium flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white">Select
+           class="py-3.5 text-sm font-medium flex items-center justify-center bg-blue-600 hover:bg-blue-500 rounded-lg text-white">Select
           Plan</a>
       </div>
 
